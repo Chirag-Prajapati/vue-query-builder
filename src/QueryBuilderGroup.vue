@@ -67,6 +67,18 @@ const selectedOperator: WritableComputedRef<string> = computed<string>({
     );
   },
 });
+const selectedSubOperator: WritableComputedRef<string> = computed<string>({
+  get: (): string => props.query.subOperatorIdentifier,
+  set: (operatorIdentifier: string) => {
+    emit(
+      'query-update',
+      {
+        ...props.query,
+        operatorIdentifier,
+      } as RuleSet,
+    );
+  },
+});
 
 const trap = ref<((position: number, newChild: RuleSet | Rule) => void) | null>(null);
 
@@ -195,6 +207,7 @@ const getBorderStyle = computed<string>(() => {
 const groupOperatorSlotProps = computed<GroupOperatorSlotProps>(() => (
   {
     currentOperator: selectedOperator.value,
+    currentsubOperator: selectedSubOperator.value,
     operators: operators.value,
     updateCurrentOperator: (newOperator: string) => {
       emit(
@@ -205,6 +218,15 @@ const groupOperatorSlotProps = computed<GroupOperatorSlotProps>(() => (
         } as RuleSet,
       );
     },
+    updateSubCurrentOperator: (newOperator: string) => {
+      emit(
+        'query-update',
+        {
+          ...props.query,
+          subOperatorIdentifier: newOperator,
+        } as RuleSet,
+      );
+    }
   }
 ));
 
@@ -342,6 +364,7 @@ function updateChild(position: number, newChild: RuleSet | Rule): void {
     'query-update',
     {
       operatorIdentifier: selectedOperator.value,
+      subOperatorIdentifier: selectedSubOperator.value,
       children: childrenUpdate,
     } as RuleSet,
   );

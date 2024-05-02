@@ -33,6 +33,7 @@ export interface QueryBuilderConfig {
 
 export interface GroupOperatorSlotProps {
   currentOperator: string,
+  currentsubOperator: string,
   operators: OperatorDefinition[],
   updateCurrentOperator: (newOperator: string) => void,
 }

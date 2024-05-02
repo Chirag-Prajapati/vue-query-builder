@@ -168,7 +168,7 @@ class MergeTrap {
     this.eventBus.emit("remover-registered", ev);
   }
 }
-const _imports_0 = "data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJncmlwLXZlcnRpY2FsIiBjbGFzcz0ic3ZnLWlubGluZS0tZmEgZmEtZ3JpcC12ZXJ0aWNhbCBmYS13LTEwIiByb2xlPSJpbWciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMyMCA1MTIiPjxwYXRoIGZpbGw9IiNCQkIiIGQ9Ik05NiAzMkgzMkMxNC4zMyAzMiAwIDQ2LjMzIDAgNjR2NjRjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmg2NGMxNy42NyAwIDMyLTE0LjMzIDMyLTMyVjY0YzAtMTcuNjctMTQuMzMtMzItMzItMzJ6bTAgMTYwSDMyYy0xNy42NyAwLTMyIDE0LjMzLTMyIDMydjY0YzAgMTcuNjcgMTQuMzMgMzIgMzIgMzJoNjRjMTcuNjcgMCAzMi0xNC4zMyAzMi0zMnYtNjRjMC0xNy42Ny0xNC4zMy0zMi0zMi0zMnptMCAxNjBIMzJjLTE3LjY3IDAtMzIgMTQuMzMtMzIgMzJ2NjRjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmg2NGMxNy42NyAwIDMyLTE0LjMzIDMyLTMydi02NGMwLTE3LjY3LTE0LjMzLTMyLTMyLTMyek0yODggMzJoLTY0Yy0xNy42NyAwLTMyIDE0LjMzLTMyIDMydjY0YzAgMTcuNjcgMTQuMzMgMzIgMzIgMzJoNjRjMTcuNjcgMCAzMi0xNC4zMyAzMi0zMlY2NGMwLTE3LjY3LTE0LjMzLTMyLTMyLTMyem0wIDE2MGgtNjRjLTE3LjY3IDAtMzIgMTQuMzMtMzIgMzJ2NjRjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmg2NGMxNy42NyAwIDMyLTE0LjMzIDMyLTMydi02NGMwLTE3LjY3LTE0LjMzLTMyLTMyLTMyem0wIDE2MGgtNjRjLTE3LjY3IDAtMzIgMTQuMzMtMzIgMzJ2NjRjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmg2NGMxNy42NyAwIDMyLTE0LjMzIDMyLTMydi02NGMwLTE3LjY3LTE0LjMzLTMyLTMyLTMyeiI+PC9wYXRoPjwvc3ZnPgo=";
+const _imports_0 = "data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJncmlwLXZlcnRpY2FsIiBjbGFzcz0ic3ZnLWlubGluZS0tZmEgZmEtZ3JpcC12ZXJ0aWNhbCBmYS13LTEwIiByb2xlPSJpbWciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMyMCA1MTIiPjxwYXRoIGZpbGw9IiNCQkIiIGQ9Ik05NiAzMkgzMkMxNC4zMyAzMiAwIDQ2LjMzIDAgNjR2NjRjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmg2NGMxNy42NyAwIDMyLTE0LjMzIDMyLTMyVjY0YzAtMTcuNjctMTQuMzMtMzItMzItMzJ6bTAgMTYwSDMyYy0xNy42NyAwLTMyIDE0LjMzLTMyIDMydjY0YzAgMTcuNjcgMTQuMzMgMzIgMzIgMzJoNjRjMTcuNjcgMCAzMi0xNC4zMyAzMi0zMnYtNjRjMC0xNy42Ny0xNC4zMy0zMi0zMi0zMnptMCAxNjBIMzJjLTE3LjY3IDAtMzIgMTQuMzMtMzIgMzJ2NjRjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmg2NGMxNy42NyAwIDMyLTE0LjMzIDMyLTMydi02NGMwLTE3LjY3LTE0LjMzLTMyLTMyLTMyek0yODggMzJoLTY0Yy0xNy42NyAwLTMyIDE0LjMzLTMyIDMydjY0YzAgMTcuNjcgMTQuMzMgMzIgMzIgMzJoNjRjMTcuNjcgMCAzMi0xNC4zMyAzMi0zMlY2NGMwLTE3LjY3LTE0LjMzLTMyLTMyLTMyem0wIDE2MGgtNjRjLTE3LjY3IDAtMzIgMTQuMzMtMzIgMzJ2NjRjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmg2NGMxNy42NyAwIDMyLTE0LjMzIDMyLTMydi02NGMwLTE3LjY3LTE0LjMzLTMyLTMyLTMyem0wIDE2MGgtNjRjLTE3LjY3IDAtMzIgMTQuMzMtMzIgMzJ2NjRjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmg2NGMxNy42NyAwIDMyLTE0LjMzIDMyLTMydi02NGMwLTE3LjY3LTE0LjMzLTMyLTMyLTMyeiI+PC9wYXRoPjwvc3ZnPg0K";
 /**!
  * Sortable 1.14.0
  * @author	RubaXa   <trash@rubaxa.org>
@@ -2936,7 +2936,7 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const QueryBuilderRule_vue_vue_type_style_index_0_scoped_f61f07d1_lang = "";
+const QueryBuilderRule_vue_vue_type_style_index_0_scoped_7e0cc443_lang = "";
 const _export_sfc = (sfc, props2) => {
   const target = sfc.__vccOpts || sfc;
   for (const [key, val] of props2) {
@@ -2944,8 +2944,8 @@ const _export_sfc = (sfc, props2) => {
   }
   return target;
 };
-const QueryBuilderRule = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-f61f07d1"]]);
-const _withScopeId$1 = (n) => (pushScopeId("data-v-530acb3b"), n = n(), popScopeId(), n);
+const QueryBuilderRule = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-7e0cc443"]]);
+const _withScopeId$1 = (n) => (pushScopeId("data-v-52edc0e1"), n = n(), popScopeId(), n);
 const _hoisted_1$1 = { class: "query-builder-child" };
 const _hoisted_2$1 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createElementVNode("span", { "aria-hidden": "true" }, "\xD7", -1));
 const _hoisted_3$1 = [
@@ -3023,9 +3023,9 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const QueryBuilderChild_vue_vue_type_style_index_0_scoped_530acb3b_lang = "";
-const QueryBuilderChild = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-530acb3b"]]);
-const _withScopeId = (n) => (pushScopeId("data-v-78d4affb"), n = n(), popScopeId(), n);
+const QueryBuilderChild_vue_vue_type_style_index_0_scoped_52edc0e1_lang = "";
+const QueryBuilderChild = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-52edc0e1"]]);
+const _withScopeId = (n) => (pushScopeId("data-v-4979f7a3"), n = n(), popScopeId(), n);
 const _hoisted_1 = { class: "query-builder-group" };
 const _hoisted_2 = { class: "query-builder-group__control" };
 const _hoisted_3 = {
@@ -3102,6 +3102,18 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     }
     const selectedOperator = computed({
       get: () => props2.query.operatorIdentifier,
+      set: (operatorIdentifier) => {
+        emit2(
+          "query-update",
+          {
+            ...props2.query,
+            operatorIdentifier
+          }
+        );
+      }
+    });
+    const selectedSubOperator = computed({
+      get: () => props2.query.subOperatorIdentifier,
       set: (operatorIdentifier) => {
         emit2(
           "query-update",
@@ -3203,6 +3215,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     });
     const groupOperatorSlotProps = computed(() => ({
       currentOperator: selectedOperator.value,
+      currentsubOperator: selectedSubOperator.value,
       operators: operators.value,
       updateCurrentOperator: (newOperator) => {
         emit2(
@@ -3210,6 +3223,15 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
           {
             ...props2.query,
             operatorIdentifier: newOperator
+          }
+        );
+      },
+      updateSubCurrentOperator: (newOperator) => {
+        emit2(
+          "query-update",
+          {
+            ...props2.query,
+            subOperatorIdentifier: newOperator
           }
         );
       }
@@ -3313,6 +3335,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
         "query-update",
         {
           operatorIdentifier: selectedOperator.value,
+          subOperatorIdentifier: selectedSubOperator.value,
           children: childrenUpdate
         }
       );
@@ -3425,8 +3448,8 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const QueryBuilderGroup_vue_vue_type_style_index_0_scoped_78d4affb_lang = "";
-const QueryBuilderGroup = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-78d4affb"]]);
+const QueryBuilderGroup_vue_vue_type_style_index_0_scoped_4979f7a3_lang = "";
+const QueryBuilderGroup = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-4979f7a3"]]);
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "QueryBuilder",
   props: {
@@ -3509,8 +3532,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const QueryBuilder_vue_vue_type_style_index_0_scoped_1676f0cb_lang = "";
-const PrivateQueryBuilder = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-1676f0cb"]]);
+const QueryBuilder_vue_vue_type_style_index_0_scoped_24efdd0c_lang = "";
+const PrivateQueryBuilder = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-24efdd0c"]]);
 const QueryBuilder = PrivateQueryBuilder;
 function install(app) {
   app.component("QueryBuilder", QueryBuilder);
