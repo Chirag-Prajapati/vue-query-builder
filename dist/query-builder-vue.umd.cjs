@@ -25,6 +25,9 @@ var __publicField = (obj, key, value) => {
     if (typeof param.operatorIdentifier !== "string") {
       return false;
     }
+    if (typeof param.subOperatorIdentifier !== "string") {
+      return false;
+    }
     return Array.isArray(param.children) && param.children.every((child) => isRule(child) || isRuleSet(child));
   }
   function isOperatorDefinition(param) {
@@ -121,6 +124,7 @@ var __publicField = (obj, key, value) => {
         "query-update",
         {
           operatorIdentifier: commonAncestor.selectedOperator,
+          subOperatorIdentifier: commonAncestor.selectedOperator,
           children
         }
       );
@@ -143,6 +147,7 @@ var __publicField = (obj, key, value) => {
         "query-update",
         {
           operatorIdentifier: parentEmitter.selectedOperator,
+          subOperatorIdentifier: parentEmitter.selectedSubOperator,
           children
         }
       );
@@ -3028,7 +3033,7 @@ var __publicField = (obj, key, value) => {
   });
   const QueryBuilderChild_vue_vue_type_style_index_0_scoped_52edc0e1_lang = "";
   const QueryBuilderChild = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-52edc0e1"]]);
-  const _withScopeId = (n) => (vue.pushScopeId("data-v-72f484d9"), n = n(), vue.popScopeId(), n);
+  const _withScopeId = (n) => (vue.pushScopeId("data-v-162d8664"), n = n(), vue.popScopeId(), n);
   const _hoisted_1 = { class: "query-builder-group" };
   const _hoisted_2 = { class: "query-builder-group__control" };
   const _hoisted_3 = {
@@ -3099,6 +3104,7 @@ var __publicField = (obj, key, value) => {
           "query-update",
           {
             operatorIdentifier: selectedOperator.value,
+            subOperatorIdentifier: selectedSubOperator.value,
             children: childrenUpdate
           }
         );
@@ -3197,7 +3203,7 @@ var __publicField = (obj, key, value) => {
         });
       }
       const operators = vue.computed(() => props2.config.operators);
-      vue.computed(() => props2.config.suboperators);
+      const suboperators = vue.computed(() => props2.config.suboperators);
       const rules = vue.computed(() => props2.config.rules);
       const childDepth = vue.computed(() => props2.depth + 1);
       const childDepthClass = vue.computed(() => `query-builder-group__group-children--depth-${childDepth.value}`);
@@ -3224,6 +3230,7 @@ var __publicField = (obj, key, value) => {
         currentOperator: selectedOperator.value,
         currentsubOperator: selectedSubOperator.value,
         operators: operators.value,
+        suboperators: suboperators.value,
         updateCurrentOperator: (newOperator) => {
           emit2(
             "query-update",
@@ -3458,8 +3465,8 @@ var __publicField = (obj, key, value) => {
       };
     }
   });
-  const QueryBuilderGroup_vue_vue_type_style_index_0_scoped_72f484d9_lang = "";
-  const QueryBuilderGroup = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-72f484d9"]]);
+  const QueryBuilderGroup_vue_vue_type_style_index_0_scoped_162d8664_lang = "";
+  const QueryBuilderGroup = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-162d8664"]]);
   const _sfc_main = /* @__PURE__ */ vue.defineComponent({
     __name: "QueryBuilder",
     props: {

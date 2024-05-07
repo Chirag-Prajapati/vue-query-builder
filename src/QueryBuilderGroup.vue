@@ -50,6 +50,7 @@ function pruneChildren() {
     'query-update',
       {
         operatorIdentifier: selectedOperator.value,
+        subOperatorIdentifier: selectedSubOperator.value,
         children: childrenUpdate,
       } as RuleSet,
   );
@@ -173,7 +174,7 @@ function removeSortedChild(removed: Removed<RuleSet | Rule>): void {
 }
 
 const operators = computed<OperatorDefinition[] >(() => props.config.operators);
-const subOperator = computed<OperatorDefinition[] >(() => props.config.suboperators);
+const suboperators = computed<OperatorDefinition[] >(() => props.config.suboperators);
 
 
 const rules = computed<RuleDefinition[]>(() => props.config.rules);
@@ -214,6 +215,7 @@ const groupOperatorSlotProps = computed<GroupOperatorSlotProps>(() => (
     currentOperator: selectedOperator.value,
     currentsubOperator: selectedSubOperator.value,
     operators: operators.value,
+    suboperators: suboperators.value,
     updateCurrentOperator: (newOperator: string) => {
       emit(
         'query-update',
@@ -234,6 +236,7 @@ const groupOperatorSlotProps = computed<GroupOperatorSlotProps>(() => (
     }
   }
 ));
+
 
 const groupControlSlotProps = computed<GroupCtrlSlotProps>(() => (
   {

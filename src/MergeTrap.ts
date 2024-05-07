@@ -82,6 +82,7 @@ function mergeViaParent(
       'query-update',
       {
         operatorIdentifier: commonAncestor.selectedOperator,
+        subOperatorIdentifier: commonAncestor.selectedOperator,
         children,
       } as RuleSet,
     );
@@ -122,6 +123,7 @@ function mergeViaNode(
       'query-update',
       {
         operatorIdentifier: parentEmitter.selectedOperator,
+        subOperatorIdentifier: parentEmitter.selectedSubOperator,
         children,
       } as RuleSet,
     );

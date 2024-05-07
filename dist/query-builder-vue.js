@@ -22,6 +22,9 @@ function isRuleSet(param) {
   if (typeof param.operatorIdentifier !== "string") {
     return false;
   }
+  if (typeof param.subOperatorIdentifier !== "string") {
+    return false;
+  }
   return Array.isArray(param.children) && param.children.every((child) => isRule(child) || isRuleSet(child));
 }
 function isOperatorDefinition(param) {
@@ -118,6 +121,7 @@ function mergeViaParent(commonAncestor, adder, remover) {
       "query-update",
       {
         operatorIdentifier: commonAncestor.selectedOperator,
+        subOperatorIdentifier: commonAncestor.selectedOperator,
         children
       }
     );
@@ -140,6 +144,7 @@ function mergeViaNode(parentEmitter, adder, remover) {
       "query-update",
       {
         operatorIdentifier: parentEmitter.selectedOperator,
+        subOperatorIdentifier: parentEmitter.selectedSubOperator,
         children
       }
     );
@@ -3025,7 +3030,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
 });
 const QueryBuilderChild_vue_vue_type_style_index_0_scoped_52edc0e1_lang = "";
 const QueryBuilderChild = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-52edc0e1"]]);
-const _withScopeId = (n) => (pushScopeId("data-v-72f484d9"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-162d8664"), n = n(), popScopeId(), n);
 const _hoisted_1 = { class: "query-builder-group" };
 const _hoisted_2 = { class: "query-builder-group__control" };
 const _hoisted_3 = {
@@ -3096,6 +3101,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
         "query-update",
         {
           operatorIdentifier: selectedOperator.value,
+          subOperatorIdentifier: selectedSubOperator.value,
           children: childrenUpdate
         }
       );
@@ -3194,7 +3200,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       });
     }
     const operators = computed(() => props2.config.operators);
-    computed(() => props2.config.suboperators);
+    const suboperators = computed(() => props2.config.suboperators);
     const rules = computed(() => props2.config.rules);
     const childDepth = computed(() => props2.depth + 1);
     const childDepthClass = computed(() => `query-builder-group__group-children--depth-${childDepth.value}`);
@@ -3221,6 +3227,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       currentOperator: selectedOperator.value,
       currentsubOperator: selectedSubOperator.value,
       operators: operators.value,
+      suboperators: suboperators.value,
       updateCurrentOperator: (newOperator) => {
         emit2(
           "query-update",
@@ -3455,8 +3462,8 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const QueryBuilderGroup_vue_vue_type_style_index_0_scoped_72f484d9_lang = "";
-const QueryBuilderGroup = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-72f484d9"]]);
+const QueryBuilderGroup_vue_vue_type_style_index_0_scoped_162d8664_lang = "";
+const QueryBuilderGroup = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-162d8664"]]);
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "QueryBuilder",
   props: {
