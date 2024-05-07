@@ -69,12 +69,12 @@ const selectedOperator: WritableComputedRef<string> = computed<string>({
 });
 const selectedSubOperator: WritableComputedRef<string> = computed<string>({
   get: (): string => props.query.subOperatorIdentifier,
-  set: (operatorIdentifier: string) => {
+  set: (subOperatorIdentifier: string) => {
     emit(
       'query-update',
       {
         ...props.query,
-        operatorIdentifier,
+        subOperatorIdentifier,
       } as RuleSet,
     );
   },
@@ -128,6 +128,7 @@ function moveSortedChild(move: Moved<RuleSet | Rule>): void {
     'query-update',
     {
       operatorIdentifier: selectedOperator.value,
+      subOperatorIdentifier: selectedSubOperator.value,
       children: childrenUpdate,
     } as RuleSet,
   );
@@ -146,6 +147,7 @@ function addSortedChild(added: Added<RuleSet | Rule>): void {
     component: draggableComponent.value?.$parent,
     ev: {
       operatorIdentifier: selectedOperator.value,
+      subOperatorIdentifier: selectedSubOperator.value,
       children: childrenUpdate,
     } as RuleSet,
     adding: true,
@@ -162,6 +164,7 @@ function removeSortedChild(removed: Removed<RuleSet | Rule>): void {
     component: draggableComponent.value?.$parent,
     ev: {
       operatorIdentifier: selectedOperator.value,
+      subOperatorIdentifier: selectedSubOperator.value,
       children: childrenUpdate,
     } as RuleSet,
     adding: false,
@@ -170,6 +173,8 @@ function removeSortedChild(removed: Removed<RuleSet | Rule>): void {
 }
 
 const operators = computed<OperatorDefinition[] >(() => props.config.operators);
+const subOperator = computed<OperatorDefinition[] >(() => props.config.suboperators);
+
 
 const rules = computed<RuleDefinition[]>(() => props.config.rules);
 
@@ -321,6 +326,7 @@ function addRule(): void {
     'query-update',
     {
       operatorIdentifier: selectedOperator.value,
+      subOperatorIdentifier: selectedSubOperator.value,
       children: childrenUpdate,
     } as RuleSet,
   );
@@ -338,6 +344,7 @@ function newGroup(): void {
   const childrenUpdate = [...children.value];
   childrenUpdate.push({
     operatorIdentifier: props.config.operators[0].identifier,
+    subOperatorIdentifier: props.config.suboperators[0].identifier,
     children: [],
   } as RuleSet);
 
@@ -378,6 +385,7 @@ function deleteChild(idx: number): void {
     'query-update',
     {
       operatorIdentifier: selectedOperator.value,
+      subOperatorIdentifier: selectedSubOperator.value,
       children: childrenUpdate,
     } as RuleSet,
   );

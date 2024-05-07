@@ -8,6 +8,7 @@ export interface Rule {
 
 export interface RuleSet {
   operatorIdentifier: string,
+  subOperatorIdentifier: string,
   children: Array<RuleSet | Rule>,
 }
 
@@ -25,6 +26,7 @@ export interface RuleDefinition {
 
 export interface QueryBuilderConfig {
   operators: OperatorDefinition[],
+  suboperators: OperatorDefinition[],
   rules: RuleDefinition[],
   maxDepth?: number,
   colors?: string[],

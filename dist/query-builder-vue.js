@@ -3025,7 +3025,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
 });
 const QueryBuilderChild_vue_vue_type_style_index_0_scoped_52edc0e1_lang = "";
 const QueryBuilderChild = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-52edc0e1"]]);
-const _withScopeId = (n) => (pushScopeId("data-v-4979f7a3"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-72f484d9"), n = n(), popScopeId(), n);
 const _hoisted_1 = { class: "query-builder-group" };
 const _hoisted_2 = { class: "query-builder-group__control" };
 const _hoisted_3 = {
@@ -3114,12 +3114,12 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     });
     const selectedSubOperator = computed({
       get: () => props2.query.subOperatorIdentifier,
-      set: (operatorIdentifier) => {
+      set: (subOperatorIdentifier) => {
         emit2(
           "query-update",
           {
             ...props2.query,
-            operatorIdentifier
+            subOperatorIdentifier
           }
         );
       }
@@ -3157,6 +3157,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
         "query-update",
         {
           operatorIdentifier: selectedOperator.value,
+          subOperatorIdentifier: selectedSubOperator.value,
           children: childrenUpdate
         }
       );
@@ -3170,6 +3171,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
         component: (_a = draggableComponent$1.value) == null ? void 0 : _a.$parent,
         ev: {
           operatorIdentifier: selectedOperator.value,
+          subOperatorIdentifier: selectedSubOperator.value,
           children: childrenUpdate
         },
         adding: true,
@@ -3184,6 +3186,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
         component: (_a = draggableComponent$1.value) == null ? void 0 : _a.$parent,
         ev: {
           operatorIdentifier: selectedOperator.value,
+          subOperatorIdentifier: selectedSubOperator.value,
           children: childrenUpdate
         },
         adding: false,
@@ -3191,6 +3194,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       });
     }
     const operators = computed(() => props2.config.operators);
+    computed(() => props2.config.suboperators);
     const rules = computed(() => props2.config.rules);
     const childDepth = computed(() => props2.depth + 1);
     const childDepthClass = computed(() => `query-builder-group__group-children--depth-${childDepth.value}`);
@@ -3302,6 +3306,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
         "query-update",
         {
           operatorIdentifier: selectedOperator.value,
+          subOperatorIdentifier: selectedSubOperator.value,
           children: childrenUpdate
         }
       );
@@ -3314,6 +3319,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       const childrenUpdate = [...children.value];
       childrenUpdate.push({
         operatorIdentifier: props2.config.operators[0].identifier,
+        subOperatorIdentifier: props2.config.suboperators[0].identifier,
         children: []
       });
       emit2(
@@ -3347,6 +3353,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
         "query-update",
         {
           operatorIdentifier: selectedOperator.value,
+          subOperatorIdentifier: selectedSubOperator.value,
           children: childrenUpdate
         }
       );
@@ -3448,8 +3455,8 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const QueryBuilderGroup_vue_vue_type_style_index_0_scoped_4979f7a3_lang = "";
-const QueryBuilderGroup = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-4979f7a3"]]);
+const QueryBuilderGroup_vue_vue_type_style_index_0_scoped_72f484d9_lang = "";
+const QueryBuilderGroup = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-72f484d9"]]);
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "QueryBuilder",
   props: {
