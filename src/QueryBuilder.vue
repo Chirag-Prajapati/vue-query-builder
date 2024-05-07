@@ -51,6 +51,7 @@ const ruleSet = computed((): RuleSet => {
 
   return {
     operatorIdentifier: props.config.operators[0].identifier,
+    subOperatorIdentifier: props.config.suboperators[0].identifier,
     children: [],
   };
 });

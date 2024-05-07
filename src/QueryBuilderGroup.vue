@@ -355,6 +355,7 @@ function newGroup(): void {
     'query-update',
     {
       operatorIdentifier: selectedOperator.value,
+      subOperatorIdentifier: selectedSubOperator.value,
       children: childrenUpdate,
     } as RuleSet,
   );

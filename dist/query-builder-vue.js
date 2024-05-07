@@ -3030,7 +3030,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
 });
 const QueryBuilderChild_vue_vue_type_style_index_0_scoped_52edc0e1_lang = "";
 const QueryBuilderChild = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-52edc0e1"]]);
-const _withScopeId = (n) => (pushScopeId("data-v-162d8664"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-7e6bb9fe"), n = n(), popScopeId(), n);
 const _hoisted_1 = { class: "query-builder-group" };
 const _hoisted_2 = { class: "query-builder-group__control" };
 const _hoisted_3 = {
@@ -3333,6 +3333,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
         "query-update",
         {
           operatorIdentifier: selectedOperator.value,
+          subOperatorIdentifier: selectedSubOperator.value,
           children: childrenUpdate
         }
       );
@@ -3462,8 +3463,8 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const QueryBuilderGroup_vue_vue_type_style_index_0_scoped_162d8664_lang = "";
-const QueryBuilderGroup = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-162d8664"]]);
+const QueryBuilderGroup_vue_vue_type_style_index_0_scoped_7e6bb9fe_lang = "";
+const QueryBuilderGroup = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-7e6bb9fe"]]);
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "QueryBuilder",
   props: {
@@ -3499,6 +3500,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       }
       return {
         operatorIdentifier: props2.config.operators[0].identifier,
+        subOperatorIdentifier: props2.config.suboperators[0].identifier,
         children: []
       };
     });
@@ -3546,8 +3548,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const QueryBuilder_vue_vue_type_style_index_0_scoped_24efdd0c_lang = "";
-const PrivateQueryBuilder = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-24efdd0c"]]);
+const QueryBuilder_vue_vue_type_style_index_0_scoped_477184de_lang = "";
+const PrivateQueryBuilder = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-477184de"]]);
 const QueryBuilder = PrivateQueryBuilder;
 function install(app) {
   app.component("QueryBuilder", QueryBuilder);
