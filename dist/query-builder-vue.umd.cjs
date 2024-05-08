@@ -177,6 +177,7 @@ var __publicField = (obj, key, value) => {
     }
   }
   const _imports_0 = "data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJncmlwLXZlcnRpY2FsIiBjbGFzcz0ic3ZnLWlubGluZS0tZmEgZmEtZ3JpcC12ZXJ0aWNhbCBmYS13LTEwIiByb2xlPSJpbWciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMyMCA1MTIiPjxwYXRoIGZpbGw9IiNCQkIiIGQ9Ik05NiAzMkgzMkMxNC4zMyAzMiAwIDQ2LjMzIDAgNjR2NjRjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmg2NGMxNy42NyAwIDMyLTE0LjMzIDMyLTMyVjY0YzAtMTcuNjctMTQuMzMtMzItMzItMzJ6bTAgMTYwSDMyYy0xNy42NyAwLTMyIDE0LjMzLTMyIDMydjY0YzAgMTcuNjcgMTQuMzMgMzIgMzIgMzJoNjRjMTcuNjcgMCAzMi0xNC4zMyAzMi0zMnYtNjRjMC0xNy42Ny0xNC4zMy0zMi0zMi0zMnptMCAxNjBIMzJjLTE3LjY3IDAtMzIgMTQuMzMtMzIgMzJ2NjRjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmg2NGMxNy42NyAwIDMyLTE0LjMzIDMyLTMydi02NGMwLTE3LjY3LTE0LjMzLTMyLTMyLTMyek0yODggMzJoLTY0Yy0xNy42NyAwLTMyIDE0LjMzLTMyIDMydjY0YzAgMTcuNjcgMTQuMzMgMzIgMzIgMzJoNjRjMTcuNjcgMCAzMi0xNC4zMyAzMi0zMlY2NGMwLTE3LjY3LTE0LjMzLTMyLTMyLTMyem0wIDE2MGgtNjRjLTE3LjY3IDAtMzIgMTQuMzMtMzIgMzJ2NjRjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmg2NGMxNy42NyAwIDMyLTE0LjMzIDMyLTMydi02NGMwLTE3LjY3LTE0LjMzLTMyLTMyLTMyem0wIDE2MGgtNjRjLTE3LjY3IDAtMzIgMTQuMzMtMzIgMzJ2NjRjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmg2NGMxNy42NyAwIDMyLTE0LjMzIDMyLTMydi02NGMwLTE3LjY3LTE0LjMzLTMyLTMyLTMyeiI+PC9wYXRoPjwvc3ZnPg0K";
+  const _imports_1 = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0idy02IGgtNiI+DQogIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTEyIDIuMjVjLTUuMzg1IDAtOS43NSA0LjM2NS05Ljc1IDkuNzVzNC4zNjUgOS43NSA5Ljc1IDkuNzUgOS43NS00LjM2NSA5Ljc1LTkuNzVTMTcuMzg1IDIuMjUgMTIgMi4yNVpNMTIuNzUgOWEuNzUuNzUgMCAwIDAtMS41IDB2Mi4yNUg5YS43NS43NSAwIDAgMCAwIDEuNWgyLjI1VjE1YS43NS43NSAwIDAgMCAxLjUgMHYtMi4yNUgxNWEuNzUuNzUgMCAwIDAgMC0xLjVoLTIuMjVWOVoiIGNsaXAtcnVsZT0iZXZlbm9kZCIgLz4NCjwvc3ZnPg0K";
   /**!
    * Sortable 1.14.0
    * @author	RubaXa   <trash@rubaxa.org>
@@ -3033,7 +3034,7 @@ var __publicField = (obj, key, value) => {
   });
   const QueryBuilderChild_vue_vue_type_style_index_0_scoped_52edc0e1_lang = "";
   const QueryBuilderChild = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-52edc0e1"]]);
-  const _withScopeId = (n) => (vue.pushScopeId("data-v-7e6bb9fe"), n = n(), vue.popScopeId(), n);
+  const _withScopeId = (n) => (vue.pushScopeId("data-v-af781ed1"), n = n(), vue.popScopeId(), n);
   const _hoisted_1 = { class: "query-builder-group" };
   const _hoisted_2 = { class: "query-builder-group__control" };
   const _hoisted_3 = {
@@ -3063,7 +3064,7 @@ var __publicField = (obj, key, value) => {
   }, "Select an operator", -1));
   const _hoisted_9 = ["value", "textContent"];
   const _hoisted_10 = {
-    key: 3,
+    key: 1,
     class: "query-builder-group__group-control"
   };
   const _hoisted_11 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ vue.createElementVNode("option", {
@@ -3091,10 +3092,14 @@ var __publicField = (obj, key, value) => {
     emits: ["query-update"],
     setup(__props, { expose, emit: emit2 }) {
       const props2 = __props;
+      let squarePlus = vue.ref(true);
       const getMergeTrap = vue.inject("getMergeTrap");
       vue.watch(() => props2.query, (n) => pruneChildren());
       vue.watch(() => props2.config.maxDepth, (n) => pruneChildren());
       vue.onMounted(() => pruneChildren());
+      function toggleRule() {
+        squarePlus.value = false;
+      }
       function pruneChildren() {
         if (children.value.length === props2.query.children.length) {
           return;
@@ -3308,6 +3313,7 @@ var __publicField = (obj, key, value) => {
         if (typeof value === "function") {
           value = value();
         }
+        squarePlus.value = true;
         childrenUpdate.push({
           identifier: selectedRuleFound.identifier,
           value
@@ -3326,6 +3332,7 @@ var __publicField = (obj, key, value) => {
         if (maxDepthExeeded.value) {
           return;
         }
+        squarePlus.value = true;
         const childrenUpdate = [...children.value];
         childrenUpdate.push({
           operatorIdentifier: props2.config.operators[0].identifier,
@@ -3399,34 +3406,6 @@ var __publicField = (obj, key, value) => {
               ], 512), [
                 [vue.vModelSelect, vue.unref(selectedOperator)]
               ])
-            ])),
-            _ctx.$slots.groupControl ? vue.renderSlot(_ctx.$slots, "groupControl", vue.normalizeProps(vue.mergeProps({ key: 2 }, vue.unref(groupControlSlotProps))), void 0, true) : (vue.openBlock(), vue.createElementBlock("div", _hoisted_10, [
-              vue.withDirectives(vue.createElementVNode("select", {
-                "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => selectedRule.value = $event)
-              }, [
-                _hoisted_11,
-                (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(vue.unref(rules), (rule) => {
-                  return vue.openBlock(), vue.createElementBlock("option", {
-                    key: rule.identifier,
-                    value: rule.identifier,
-                    textContent: vue.toDisplayString(rule.name)
-                  }, null, 8, _hoisted_12);
-                }), 128))
-              ], 512), [
-                [vue.vModelSelect, selectedRule.value]
-              ]),
-              vue.createElementVNode("button", {
-                disabled: selectedRule.value === "",
-                onClick: addRule,
-                class: "query-builder-group__rule-adding-button"
-              }, " Add Rule ", 8, _hoisted_13),
-              !vue.unref(maxDepthExeeded) ? (vue.openBlock(), vue.createElementBlock(vue.Fragment, { key: 0 }, [
-                _hoisted_14,
-                vue.createElementVNode("button", {
-                  onClick: newGroup,
-                  class: "query-builder-group__group-adding-button"
-                }, " Add Group ")
-              ], 64)) : vue.createCommentVNode("", true)
             ]))
           ]),
           vue.createVNode(vue.unref(draggableComponent), vue.mergeProps({
@@ -3461,13 +3440,56 @@ var __publicField = (obj, key, value) => {
               ]), 1032, ["config", "query", "depth", "onQueryUpdate", "onDeleteChild"]))
             ]),
             _: 3
-          }, 16, ["class", "style", "modelValue"])
+          }, 16, ["class", "style", "modelValue"]),
+          vue.createElementVNode("div", null, [
+            vue.withDirectives(vue.createElementVNode("img", {
+              class: "",
+              src: _imports_1,
+              onClick: _cache[1] || (_cache[1] = ($event) => toggleRule()),
+              alt: "Plus",
+              style: { "width": "24px" }
+            }, null, 512), [
+              [vue.vShow, vue.unref(squarePlus)]
+            ]),
+            vue.withDirectives(vue.createElementVNode("div", null, [
+              _ctx.$slots.groupControl ? vue.renderSlot(_ctx.$slots, "groupControl", vue.normalizeProps(vue.mergeProps({ key: 0 }, vue.unref(groupControlSlotProps))), void 0, true) : (vue.openBlock(), vue.createElementBlock("div", _hoisted_10, [
+                vue.withDirectives(vue.createElementVNode("select", {
+                  "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => selectedRule.value = $event)
+                }, [
+                  _hoisted_11,
+                  (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(vue.unref(rules), (rule) => {
+                    return vue.openBlock(), vue.createElementBlock("option", {
+                      key: rule.identifier,
+                      value: rule.identifier,
+                      textContent: vue.toDisplayString(rule.name)
+                    }, null, 8, _hoisted_12);
+                  }), 128))
+                ], 512), [
+                  [vue.vModelSelect, selectedRule.value]
+                ]),
+                vue.createElementVNode("button", {
+                  disabled: selectedRule.value === "",
+                  onClick: addRule,
+                  class: "query-builder-group__rule-adding-button"
+                }, " Add Rule ", 8, _hoisted_13),
+                !vue.unref(maxDepthExeeded) ? (vue.openBlock(), vue.createElementBlock(vue.Fragment, { key: 0 }, [
+                  _hoisted_14,
+                  vue.createElementVNode("button", {
+                    onClick: newGroup,
+                    class: "query-builder-group__group-adding-button"
+                  }, " Add Group ")
+                ], 64)) : vue.createCommentVNode("", true)
+              ]))
+            ], 512), [
+              [vue.vShow, !vue.unref(squarePlus)]
+            ])
+          ])
         ]);
       };
     }
   });
-  const QueryBuilderGroup_vue_vue_type_style_index_0_scoped_7e6bb9fe_lang = "";
-  const QueryBuilderGroup = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-7e6bb9fe"]]);
+  const QueryBuilderGroup_vue_vue_type_style_index_0_scoped_af781ed1_lang = "";
+  const QueryBuilderGroup = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-af781ed1"]]);
   const _sfc_main = /* @__PURE__ */ vue.defineComponent({
     __name: "QueryBuilder",
     props: {

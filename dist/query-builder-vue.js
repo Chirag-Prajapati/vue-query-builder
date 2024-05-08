@@ -4,7 +4,7 @@ var __publicField = (obj, key, value) => {
   __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
   return value;
 };
-import { resolveComponent, TransitionGroup, defineComponent, h, nextTick, computed, openBlock, createElementBlock, unref, createCommentVNode, renderSlot, normalizeProps, mergeProps, Fragment, createElementVNode, toDisplayString, createBlock, resolveDynamicComponent, isRef, createSlots, renderList, withCtx, guardReactiveProps, withModifiers, pushScopeId, popScopeId, inject, watch, onMounted, ref, withDirectives, vModelSelect, createVNode, provide } from "vue";
+import { resolveComponent, TransitionGroup, defineComponent, h, nextTick, computed, openBlock, createElementBlock, unref, createCommentVNode, renderSlot, normalizeProps, mergeProps, Fragment, createElementVNode, toDisplayString, createBlock, resolveDynamicComponent, isRef, createSlots, renderList, withCtx, guardReactiveProps, withModifiers, pushScopeId, popScopeId, ref, inject, watch, onMounted, withDirectives, vModelSelect, createVNode, vShow, provide } from "vue";
 function isRule(param) {
   if (typeof param !== "object" || param === null) {
     return false;
@@ -174,6 +174,7 @@ class MergeTrap {
   }
 }
 const _imports_0 = "data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJncmlwLXZlcnRpY2FsIiBjbGFzcz0ic3ZnLWlubGluZS0tZmEgZmEtZ3JpcC12ZXJ0aWNhbCBmYS13LTEwIiByb2xlPSJpbWciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMyMCA1MTIiPjxwYXRoIGZpbGw9IiNCQkIiIGQ9Ik05NiAzMkgzMkMxNC4zMyAzMiAwIDQ2LjMzIDAgNjR2NjRjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmg2NGMxNy42NyAwIDMyLTE0LjMzIDMyLTMyVjY0YzAtMTcuNjctMTQuMzMtMzItMzItMzJ6bTAgMTYwSDMyYy0xNy42NyAwLTMyIDE0LjMzLTMyIDMydjY0YzAgMTcuNjcgMTQuMzMgMzIgMzIgMzJoNjRjMTcuNjcgMCAzMi0xNC4zMyAzMi0zMnYtNjRjMC0xNy42Ny0xNC4zMy0zMi0zMi0zMnptMCAxNjBIMzJjLTE3LjY3IDAtMzIgMTQuMzMtMzIgMzJ2NjRjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmg2NGMxNy42NyAwIDMyLTE0LjMzIDMyLTMydi02NGMwLTE3LjY3LTE0LjMzLTMyLTMyLTMyek0yODggMzJoLTY0Yy0xNy42NyAwLTMyIDE0LjMzLTMyIDMydjY0YzAgMTcuNjcgMTQuMzMgMzIgMzIgMzJoNjRjMTcuNjcgMCAzMi0xNC4zMyAzMi0zMlY2NGMwLTE3LjY3LTE0LjMzLTMyLTMyLTMyem0wIDE2MGgtNjRjLTE3LjY3IDAtMzIgMTQuMzMtMzIgMzJ2NjRjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmg2NGMxNy42NyAwIDMyLTE0LjMzIDMyLTMydi02NGMwLTE3LjY3LTE0LjMzLTMyLTMyLTMyem0wIDE2MGgtNjRjLTE3LjY3IDAtMzIgMTQuMzMtMzIgMzJ2NjRjMCAxNy42NyAxNC4zMyAzMiAzMiAzMmg2NGMxNy42NyAwIDMyLTE0LjMzIDMyLTMydi02NGMwLTE3LjY3LTE0LjMzLTMyLTMyLTMyeiI+PC9wYXRoPjwvc3ZnPg0K";
+const _imports_1 = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0idy02IGgtNiI+DQogIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTEyIDIuMjVjLTUuMzg1IDAtOS43NSA0LjM2NS05Ljc1IDkuNzVzNC4zNjUgOS43NSA5Ljc1IDkuNzUgOS43NS00LjM2NSA5Ljc1LTkuNzVTMTcuMzg1IDIuMjUgMTIgMi4yNVpNMTIuNzUgOWEuNzUuNzUgMCAwIDAtMS41IDB2Mi4yNUg5YS43NS43NSAwIDAgMCAwIDEuNWgyLjI1VjE1YS43NS43NSAwIDAgMCAxLjUgMHYtMi4yNUgxNWEuNzUuNzUgMCAwIDAgMC0xLjVoLTIuMjVWOVoiIGNsaXAtcnVsZT0iZXZlbm9kZCIgLz4NCjwvc3ZnPg0K";
 /**!
  * Sortable 1.14.0
  * @author	RubaXa   <trash@rubaxa.org>
@@ -3030,7 +3031,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
 });
 const QueryBuilderChild_vue_vue_type_style_index_0_scoped_52edc0e1_lang = "";
 const QueryBuilderChild = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-52edc0e1"]]);
-const _withScopeId = (n) => (pushScopeId("data-v-7e6bb9fe"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-af781ed1"), n = n(), popScopeId(), n);
 const _hoisted_1 = { class: "query-builder-group" };
 const _hoisted_2 = { class: "query-builder-group__control" };
 const _hoisted_3 = {
@@ -3060,7 +3061,7 @@ const _hoisted_8 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createElem
 }, "Select an operator", -1));
 const _hoisted_9 = ["value", "textContent"];
 const _hoisted_10 = {
-  key: 3,
+  key: 1,
   class: "query-builder-group__group-control"
 };
 const _hoisted_11 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createElementVNode("option", {
@@ -3088,10 +3089,14 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   emits: ["query-update"],
   setup(__props, { expose, emit: emit2 }) {
     const props2 = __props;
+    let squarePlus = ref(true);
     const getMergeTrap = inject("getMergeTrap");
     watch(() => props2.query, (n) => pruneChildren());
     watch(() => props2.config.maxDepth, (n) => pruneChildren());
     onMounted(() => pruneChildren());
+    function toggleRule() {
+      squarePlus.value = false;
+    }
     function pruneChildren() {
       if (children.value.length === props2.query.children.length) {
         return;
@@ -3305,6 +3310,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       if (typeof value === "function") {
         value = value();
       }
+      squarePlus.value = true;
       childrenUpdate.push({
         identifier: selectedRuleFound.identifier,
         value
@@ -3323,6 +3329,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       if (maxDepthExeeded.value) {
         return;
       }
+      squarePlus.value = true;
       const childrenUpdate = [...children.value];
       childrenUpdate.push({
         operatorIdentifier: props2.config.operators[0].identifier,
@@ -3396,34 +3403,6 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
             ], 512), [
               [vModelSelect, unref(selectedOperator)]
             ])
-          ])),
-          _ctx.$slots.groupControl ? renderSlot(_ctx.$slots, "groupControl", normalizeProps(mergeProps({ key: 2 }, unref(groupControlSlotProps))), void 0, true) : (openBlock(), createElementBlock("div", _hoisted_10, [
-            withDirectives(createElementVNode("select", {
-              "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => selectedRule.value = $event)
-            }, [
-              _hoisted_11,
-              (openBlock(true), createElementBlock(Fragment, null, renderList(unref(rules), (rule) => {
-                return openBlock(), createElementBlock("option", {
-                  key: rule.identifier,
-                  value: rule.identifier,
-                  textContent: toDisplayString(rule.name)
-                }, null, 8, _hoisted_12);
-              }), 128))
-            ], 512), [
-              [vModelSelect, selectedRule.value]
-            ]),
-            createElementVNode("button", {
-              disabled: selectedRule.value === "",
-              onClick: addRule,
-              class: "query-builder-group__rule-adding-button"
-            }, " Add Rule ", 8, _hoisted_13),
-            !unref(maxDepthExeeded) ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
-              _hoisted_14,
-              createElementVNode("button", {
-                onClick: newGroup,
-                class: "query-builder-group__group-adding-button"
-              }, " Add Group ")
-            ], 64)) : createCommentVNode("", true)
           ]))
         ]),
         createVNode(unref(draggableComponent), mergeProps({
@@ -3458,13 +3437,56 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
             ]), 1032, ["config", "query", "depth", "onQueryUpdate", "onDeleteChild"]))
           ]),
           _: 3
-        }, 16, ["class", "style", "modelValue"])
+        }, 16, ["class", "style", "modelValue"]),
+        createElementVNode("div", null, [
+          withDirectives(createElementVNode("img", {
+            class: "",
+            src: _imports_1,
+            onClick: _cache[1] || (_cache[1] = ($event) => toggleRule()),
+            alt: "Plus",
+            style: { "width": "24px" }
+          }, null, 512), [
+            [vShow, unref(squarePlus)]
+          ]),
+          withDirectives(createElementVNode("div", null, [
+            _ctx.$slots.groupControl ? renderSlot(_ctx.$slots, "groupControl", normalizeProps(mergeProps({ key: 0 }, unref(groupControlSlotProps))), void 0, true) : (openBlock(), createElementBlock("div", _hoisted_10, [
+              withDirectives(createElementVNode("select", {
+                "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => selectedRule.value = $event)
+              }, [
+                _hoisted_11,
+                (openBlock(true), createElementBlock(Fragment, null, renderList(unref(rules), (rule) => {
+                  return openBlock(), createElementBlock("option", {
+                    key: rule.identifier,
+                    value: rule.identifier,
+                    textContent: toDisplayString(rule.name)
+                  }, null, 8, _hoisted_12);
+                }), 128))
+              ], 512), [
+                [vModelSelect, selectedRule.value]
+              ]),
+              createElementVNode("button", {
+                disabled: selectedRule.value === "",
+                onClick: addRule,
+                class: "query-builder-group__rule-adding-button"
+              }, " Add Rule ", 8, _hoisted_13),
+              !unref(maxDepthExeeded) ? (openBlock(), createElementBlock(Fragment, { key: 0 }, [
+                _hoisted_14,
+                createElementVNode("button", {
+                  onClick: newGroup,
+                  class: "query-builder-group__group-adding-button"
+                }, " Add Group ")
+              ], 64)) : createCommentVNode("", true)
+            ]))
+          ], 512), [
+            [vShow, !unref(squarePlus)]
+          ])
+        ])
       ]);
     };
   }
 });
-const QueryBuilderGroup_vue_vue_type_style_index_0_scoped_7e6bb9fe_lang = "";
-const QueryBuilderGroup = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-7e6bb9fe"]]);
+const QueryBuilderGroup_vue_vue_type_style_index_0_scoped_af781ed1_lang = "";
+const QueryBuilderGroup = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-af781ed1"]]);
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "QueryBuilder",
   props: {

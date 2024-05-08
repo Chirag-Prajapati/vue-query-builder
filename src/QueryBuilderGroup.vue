@@ -30,6 +30,8 @@ const props = defineProps({
   },
 });
 
+let squarePlus = ref(true);
+
 const getMergeTrap: () => MergeTrap = inject('getMergeTrap');
 
 watch(() => props.query, (n: any) => pruneChildren());
@@ -37,6 +39,10 @@ watch(() => props.query, (n: any) => pruneChildren());
 watch(() => props.config.maxDepth, (n: any) => pruneChildren());
 
 onMounted(() => pruneChildren());
+
+function toggleRule(){
+  squarePlus.value = false;
+}
 
 function pruneChildren() {
   if (children.value.length === props.query.children.length) {
@@ -320,6 +326,8 @@ function addRule(): void {
     value = value();
   }
 
+  squarePlus.value = true;
+
   childrenUpdate.push({
     identifier: selectedRuleFound.identifier,
     value,
@@ -343,6 +351,8 @@ function newGroup(): void {
     // noop, as max depth reached
     return;
   }
+
+  squarePlus.value = true;
 
   const childrenUpdate = [...children.value];
   childrenUpdate.push({
@@ -442,41 +452,7 @@ defineExpose({
           </select>
         </div>
       </template>
-      <template v-if="$slots.groupControl">
-        <slot
-          name="groupControl"
-          v-bind="groupControlSlotProps"
-        />
-      </template>
-      <template v-else>
-        <div class="query-builder-group__group-control">
-          <select v-model="selectedRule">
-            <option disabled value="">Select a rule</option>
-            <option
-              v-for="rule in rules"
-              :key="rule.identifier"
-              :value="rule.identifier"
-              v-text="rule.name"
-            />
-          </select>
-          <button
-            :disabled="selectedRule === ''"
-            @click="addRule"
-            class="query-builder-group__rule-adding-button"
-          >
-            Add Rule
-          </button>
-          <template v-if="! maxDepthExeeded">
-            <div class="query-builder-group__spacer"/>
-            <button
-              @click="newGroup"
-              class="query-builder-group__group-adding-button"
-            >
-              Add Group
-            </button>
-          </template>
-        </div>
-      </template>
+      
     </div>
     <draggable
       class="query-builder-group__group-children"
@@ -512,6 +488,54 @@ defineExpose({
       </template>
 
     </draggable>
+    <div>
+      <img
+            v-show="squarePlus"
+            class=""
+            src="./square-plus.svg"
+            @click="toggleRule()"
+            alt="Plus" style="width:24px"
+          >
+      <div v-show="!squarePlus">
+        <template v-if="$slots.groupControl">
+        <slot
+          name="groupControl"
+          v-bind="groupControlSlotProps"
+        />
+      </template>
+      <template v-else>
+        <div class="query-builder-group__group-control">
+          <select v-model="selectedRule">
+            <option disabled value="">Select a rule</option>
+            <option
+              v-for="rule in rules"
+              :key="rule.identifier"
+              :value="rule.identifier"
+              v-text="rule.name"
+            />
+          </select>
+          <button
+            :disabled="selectedRule === ''"
+            @click="addRule"
+            class="query-builder-group__rule-adding-button"
+          >
+            Add Rule
+          </button>
+          <template v-if="! maxDepthExeeded">
+            <div class="query-builder-group__spacer"/>
+            <button
+              @click="newGroup"
+              class="query-builder-group__group-adding-button"
+            >
+              Add Group
+            </button>
+          </template>
+        </div>
+      </template>
+      </div>
+
+      
+    </div>
   </div>
 </template>
 
