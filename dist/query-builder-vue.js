@@ -3031,7 +3031,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
 });
 const QueryBuilderChild_vue_vue_type_style_index_0_scoped_52edc0e1_lang = "";
 const QueryBuilderChild = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-52edc0e1"]]);
-const _withScopeId = (n) => (pushScopeId("data-v-af781ed1"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-0b0f91c1"), n = n(), popScopeId(), n);
 const _hoisted_1 = { class: "query-builder-group" };
 const _hoisted_2 = { class: "query-builder-group__control" };
 const _hoisted_3 = {
@@ -3440,7 +3440,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
         }, 16, ["class", "style", "modelValue"]),
         createElementVNode("div", null, [
           withDirectives(createElementVNode("img", {
-            class: "",
+            class: "cursor-pointer",
             src: _imports_1,
             onClick: _cache[1] || (_cache[1] = ($event) => toggleRule()),
             alt: "Plus",
@@ -3485,8 +3485,8 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const QueryBuilderGroup_vue_vue_type_style_index_0_scoped_af781ed1_lang = "";
-const QueryBuilderGroup = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-af781ed1"]]);
+const QueryBuilderGroup_vue_vue_type_style_index_0_scoped_0b0f91c1_lang = "";
+const QueryBuilderGroup = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-0b0f91c1"]]);
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "QueryBuilder",
   props: {

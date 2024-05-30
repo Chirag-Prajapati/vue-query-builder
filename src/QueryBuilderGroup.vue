@@ -488,10 +488,10 @@ defineExpose({
       </template>
 
     </draggable>
-    <div>
+    <div >
       <img
             v-show="squarePlus"
-            class=""
+            class="cursor-pointer"
             src="./square-plus.svg"
             @click="toggleRule()"
             alt="Plus" style="width:24px"
