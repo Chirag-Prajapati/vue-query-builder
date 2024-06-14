@@ -3580,4 +3580,4 @@ export {
   QueryBuilder,
   install
 };
-//# sourceMappingURL=query-builder-vue.js.map
+//# sourceMappingURL=query-builder-vue.mjs.map

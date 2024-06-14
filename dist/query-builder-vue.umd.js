@@ -3583,4 +3583,4 @@ var __publicField = (obj, key, value) => {
   exports2.install = install;
   Object.defineProperties(exports2, { __esModule: { value: true }, [Symbol.toStringTag]: { value: "Module" } });
 });
-//# sourceMappingURL=query-builder-vue.umd.cjs.map
+//# sourceMappingURL=query-builder-vue.umd.js.map

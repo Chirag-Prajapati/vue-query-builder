@@ -29,7 +29,6 @@
   },
   "main": "./dist/query-builder-vue.umd.js",
   "module": "./dist/query-builder-vue.js",
-  "type": "module",
   "types": "./types/index.d.ts",
   "files": [
     "/dist/*.js",
